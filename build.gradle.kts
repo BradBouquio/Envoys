@@ -16,8 +16,8 @@ sourceSets.main {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 repositories {
@@ -45,7 +45,7 @@ dependencies {
     implementation("de.tr7zw:item-nbt-api-plugin:2.10.0")
     implementation("io.papermc:paperlib:1.0.7")
 
-    compileOnly("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.19.3-R0.1-SNAPSHOT")
     compileOnly("me.clip:placeholderapi:2.8.2")
     compileOnly("com.gmail.filoghost.holographicdisplays:holographicdisplays-api:2.4.0")
 

@@ -52,23 +52,7 @@ class Envoys(val pl: Plugin) {
     lateinit var data: Data
 
     fun run() {
-        if (ServerVersion.version >= ServerVersion.V1_17) {
-            this.start()
-        } else {
-            if (JavaVersion.version >= 16) {
-                pl.logger.severe(
-                    """
-                    Envoys does not support Java 16 and higher on Minecraft versions lower than 1.17.
-                    This is due to changes in class loading, for which Spigot offers new features, only available in
-                    1.17 or higher. Please update your server to use Minecraft 1.17 or higher,
-                    or downgrade the Java version you are using.
-                    """.trimIndent()
-                )
-                return
-            }
-
-            this.start();
-        }
+        this.start();
     }
 
     fun onDisable() {
